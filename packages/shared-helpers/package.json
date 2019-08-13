@@ -1,0 +1,21 @@
+{
+  "name": "shared-helpers",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./lib",
+  "browser": "./lib",
+  "module": "./src",
+  "scripts": {
+    "compile": "babel src -d lib",
+    "postinstall": "npm run compile"
+  },
+  "dependencies": {
+    "next": "9.0.3",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5"
+  }
+}
